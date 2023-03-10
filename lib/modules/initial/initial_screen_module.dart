@@ -1,5 +1,7 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
+import 'initial_screen_navigator.dart';
+import 'presentation/cubit/initial_page_cubit.dart';
 import 'presentation/pages/initial_page.dart';
 
 class InitialScreenModule extends Module {
@@ -8,14 +10,20 @@ class InitialScreenModule extends Module {
   @override
   List<Bind<Object>> get binds => [
         // Navigator
+        Bind((i) => InitialScreenNavigator()),
+
+        // Cubits
+        Bind(
+          (i) => InitialPageCubit(
+            navigator: i(),
+          ),
+        ),
 
         // Datasources
 
         // Repositories
 
         // Usecases
-
-        // Cubits
       ];
 
   @override

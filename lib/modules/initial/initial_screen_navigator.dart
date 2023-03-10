@@ -1,8 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
+import 'package:find_weather_app/modules/shared/constantes/app_dimens.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+import '../shared/constantes/app_colors.dart';
 
 class InitialScreenNavigator {
   void openHomePage() {
+    showNotImplementedToast();
     // Modular.to.pushNamed(NewModule.moduleName);
   }
 
@@ -20,4 +23,15 @@ class InitialScreenNavigator {
   // void openPageWithArgs({required int currentPageIndex}) {
   //   Modular.to.pushNamed(PixMyKeysPage.routePath, arguments: currentPageIndex);
   // }
+}
+
+void showNotImplementedToast() {
+  Fluttertoast.showToast(
+    msg: "Função não implementada",
+    toastLength: Toast.LENGTH_SHORT,
+    gravity: ToastGravity.CENTER,
+    backgroundColor: AppColors.white,
+    textColor: AppColors.dark,
+    fontSize: cSize16,
+  );
 }
