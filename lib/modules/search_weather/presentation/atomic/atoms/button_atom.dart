@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../shared/constantes/app_colors.dart';
-import '../../../shared/constantes/app_dimens.dart';
-import '../../../shared/constantes/app_text_styles.dart';
+import '../../../../shared/constantes/app_colors.dart';
+import '../../../../shared/constantes/app_dimens.dart';
+import '../../../../shared/constantes/app_text_styles.dart';
 
 class ButtonAtom extends StatelessWidget {
   final String text;

@@ -1,5 +1,6 @@
 class SearchWeatherStrings {
   static const presentation = _InitialScreen();
+  static const bottomNavigation = _BottomNavigationMolecule();
 }
 
 class _InitialScreen {
@@ -11,4 +12,11 @@ class _InitialScreen {
   ficou tão fácil ter a previsão do
   tempo na palma da sua mão''';
   String get textButton => 'Iniciar';
+}
+
+class _BottomNavigationMolecule {
+  const _BottomNavigationMolecule();
+
+  String get home => 'Home';
+  String get search => 'Buscar';
 }

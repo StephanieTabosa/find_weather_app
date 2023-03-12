@@ -8,20 +8,20 @@ import '../../../shared/constantes/app_dimens.dart';
 import '../../../shared/constantes/app_text_styles.dart';
 import '../../search_weather_module.dart';
 import '../atomic/atoms/button_atom.dart';
-import '../cubit/initial_page_cubit.dart';
+import '../cubit/home_empty_page_cubit.dart';
 
-class InitialPage extends StatefulWidget {
-  static const routeName = '/initial_page';
+class HomeEmptyPage extends StatefulWidget {
+  static const routeName = '/home_empty_page';
   static const routePath = '${SearchWeatherModule.moduleName}$routeName';
 
-  const InitialPage({Key? key}) : super(key: key);
+  const HomeEmptyPage({Key? key}) : super(key: key);
 
   @override
-  State<InitialPage> createState() => _InitialPageState();
+  State<HomeEmptyPage> createState() => _HomeEmptyPageState();
 }
 
-class _InitialPageState extends State<InitialPage> {
-  final cubit = Modular.get<InitialPageCubit>();
+class _HomeEmptyPageState extends State<HomeEmptyPage> {
+  final cubit = Modular.get<HomeEmptyPageCubit>();
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +58,7 @@ class _InitialPageState extends State<InitialPage> {
             padding: const EdgeInsets.all(cPadding16),
             child: ButtonAtom(
               text: SearchWeatherStrings.presentation.textButton,
-              onPressed: cubit.onInitialButtonTap,
+              onPressed: () {},
             ),
           ),
         ));
