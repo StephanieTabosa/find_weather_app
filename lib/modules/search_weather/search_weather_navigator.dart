@@ -3,7 +3,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 import '../shared/constantes/app_colors.dart';
 
-class InitialScreenNavigator {
+class SearchWeatherNavigator {
   void openHomePage() {
     showNotImplementedToast();
     // Modular.to.pushNamed(NewModule.moduleName);

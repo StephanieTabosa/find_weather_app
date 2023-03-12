@@ -1,16 +1,16 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
-import 'initial_screen_navigator.dart';
+import 'search_weather_navigator.dart';
 import 'presentation/cubit/initial_page_cubit.dart';
 import 'presentation/pages/initial_page.dart';
 
-class InitialScreenModule extends Module {
-  static const moduleName = '/initial_screen';
+class SearchWeatherModule extends Module {
+  static const moduleName = '/search_weather';
 
   @override
   List<Bind<Object>> get binds => [
         // Navigator
-        Bind((i) => InitialScreenNavigator()),
+        Bind((i) => SearchWeatherNavigator()),
 
         // Cubits
         Bind(

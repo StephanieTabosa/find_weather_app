@@ -1,9 +1,9 @@
-class InitialScreenStrings {
-  static const presentation = _Presentation();
+class SearchWeatherStrings {
+  static const presentation = _InitialScreen();
 }
 
-class _Presentation {
-  const _Presentation();
+class _InitialScreen {
+  const _InitialScreen();
 
   String get title => '''Descubra o Clima
   na sua Cidade''';

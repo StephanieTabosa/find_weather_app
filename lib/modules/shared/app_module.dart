@@ -1,6 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
-import '../initial/initial_screen_module.dart';
+import '../search_weather/search_weather_module.dart';
 
 class AppModule extends Module {
   //Dependencies
@@ -9,6 +9,6 @@ class AppModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ModuleRoute(Modular.initialRoute, module: InitialScreenModule()),
+        ModuleRoute(Modular.initialRoute, module: SearchWeatherModule()),
       ];
 }
